@@ -1,0 +1,7 @@
+Clases de programacion en PHP:
+
+Programacion Lineal: Es cuando desarrollamos todo el codigo disponiendo instrucciones PHP alterando con el HTML de la pagina.
+
+Programacion Estructurada: Es cuando planteamos funciones que agrupan actividades a desarrollar y luego dentro de la pagina llamamos a dichas funciones que pueden estar dentro del mismo archivo o en una libreria separada.
+
+Programacion Orientada a Objetos: Es cuando planteamos clases y definimos objetos de las mismas.
