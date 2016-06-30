@@ -52,4 +52,4 @@ class Persona
 $persona = new Persona();
 $persona->asignarNombre("Felix");
 $persona->mostrarNombre();
-$persona->mensaje();
+// $persona->mensaje();
