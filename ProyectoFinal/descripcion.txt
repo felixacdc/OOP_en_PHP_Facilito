@@ -1,0 +1,1 @@
+Vamos a desarrollar un simple CRUD el cual va a administrar los estudiantes de un salon, este estara dividido en secciones. Ademas cada estudiante va a contener hasta su imagen.
