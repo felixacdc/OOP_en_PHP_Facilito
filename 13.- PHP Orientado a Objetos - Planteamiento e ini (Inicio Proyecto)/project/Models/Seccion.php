@@ -49,7 +49,7 @@
 
         public function edit()
         {
-            $sql = "UPDATE FROM secciones 
+            $sql = "UPDATE secciones 
                     SET nombre = '{$this->nombre}' 
                     WHERE id = '{$this->id}'";
 
