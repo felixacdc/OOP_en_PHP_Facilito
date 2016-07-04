@@ -41,6 +41,9 @@
                 $this->argumento = $ruta;
 
                 // print_r($this->metodo);
+            } else {
+                $this->controlador = "estudiantes";
+                $this->metodo = "index";
             }
         }
 

@@ -18,6 +18,7 @@
                 $metodo = "index";
             }
 
+            // is_readable — Indica si un fichero existe y es legible
             if ( is_readable($rute) ) {
                 require_once $rute;
                 $mostrar = "Controllers\\" . $controlador;
@@ -33,5 +34,14 @@
                 }              
             }
             // print_r($rute);
+
+            // Cargar vista
+            $ruta = ROOT . "Views" . DS . $request->getControlador() . DS . $request->getMetodo() . ".php";
+
+            if ( is_readable($ruta) ) {
+                require_once $ruta;
+            } else {
+                print_r("No se encontro la vista");
+            }
         }
     }
