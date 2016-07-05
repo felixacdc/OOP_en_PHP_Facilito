@@ -11,6 +11,7 @@
               <th>Imagen</th>
               <th>Nombre</th>
               <th>Edad</th>
+              <th>Sección</th>
               <th>Promedio</th>
               <th>Accion</th>
             </tr>
@@ -23,6 +24,7 @@
                   <td><img class="imagen-avatar" src="<?php echo URL; ?>Views/template/imagenes/avatars/<?php echo $row['imagen']; ?>"></td>
                   <td><?php echo $row['nombre']; ?></td>
                   <td><?php echo $row['edad']; ?></td>
+                  <td><?php echo $row['nombre_seccion']; ?></td>
                   <td><?php echo $row['promedio']; ?></td>
                   <td>
                       <a class="btn btn-info btn-sm" href="<?php echo URL; ?>estudiantes/editar/<?php echo $row['id']; ?>">Editar</a>
