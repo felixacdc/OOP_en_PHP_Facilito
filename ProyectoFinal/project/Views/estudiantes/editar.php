@@ -1,3 +1,4 @@
+<?php $secciones = $estudiantes->listarSecciones(); ?>
 <div class="container">
     <h1 class="text-center title-list">Editar estudiantes</h1>
     <div class="panel panel-success">
@@ -40,7 +41,7 @@
                   <div class="col-lg-10">
                     <select class="form-control" name="id_seccion">
                       <?php 
-                        while($row = mysqli_fetch_array($datos)){
+                        while($row = mysqli_fetch_array($secciones)){
                       ?>
                         <option value="<?php echo $row["id"]; ?>"> <?php echo $row["nombre"] ?> <option>
                       <?php

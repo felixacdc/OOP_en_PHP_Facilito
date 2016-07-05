@@ -22,7 +22,7 @@
             ?>
                 <tr>
                   <td><img class="imagen-avatar" src="<?php echo URL; ?>Views/template/imagenes/avatars/<?php echo $row['imagen']; ?>"></td>
-                  <td><?php echo $row['nombre']; ?></td>
+                  <td><a href="<?php echo URL; ?>estudiantes/ver/<?php echo $row['id']; ?>"><?php echo $row['nombre']; ?></a></td>
                   <td><?php echo $row['edad']; ?></td>
                   <td><?php echo $row['nombre_seccion']; ?></td>
                   <td><?php echo $row['promedio']; ?></td>
