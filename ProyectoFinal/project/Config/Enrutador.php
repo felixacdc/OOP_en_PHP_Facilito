@@ -28,9 +28,11 @@
                 // Si no existe un metodo 
                 if ( !isset($argumento) ) {
                     // Permite llamar a una funcion
+                    // la variable Datos almacena el valor retornado por la funcion
                     $datos = call_user_func(array($controlador, $metodo));
                 } else {
                     // Permite llamar a una funcion pasandole un array de argumentos
+                    // la variable Datos almacena el valor retornado por la funcion
                     $datos = call_user_func_array(array($controlador, $metodo), $argumento);
                 }              
             }

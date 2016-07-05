@@ -25,7 +25,7 @@
 
         public function consultaSimple($sql)
         {
-            $this->con->query($query);
+            $this->con->query($sql);
         }
 
         public function consultaRetorno($sql)
