@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Estudiantes</title>
-</head>
-<body>
-    <h1>Vista del estudiante principal.</h1>
-</body>
-</html>
+<h1>Vista del estudiante principal.</h1>
+<?php 
+    $datos = $estudiantes->index();
+
+    while ( $row = mysqli_fetch_array($datos) ) {
+        echo $row['nombre'];
+    }
+?>
