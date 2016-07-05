@@ -1,17 +1,21 @@
 <?php namespace Controllers;
-
+    
+    use Models\Seccion as Seccion;
     /**
     * Controlador de estudiantes
     */
     class seccionesController
     {
-        public function index()
+        private $secciones;
+
+        public function __construct()
         {
-            print_r("Hola soy el index del secciones");
+            $this->secciones = new Seccion();
         }
 
-        public function ver($num)
+        public function index()
         {
-            print_r("EL numero es: " . $num);
+            $datos = $this->secciones->listar();
+            return $datos;
         }
     }

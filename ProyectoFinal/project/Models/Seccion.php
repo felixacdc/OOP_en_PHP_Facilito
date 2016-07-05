@@ -7,11 +7,7 @@
     {
         private $id;
         private $nombre;
-
-        public function __construct()
-        {
-            $this->con = new Conexion();
-        }
+        private $con;
 
         public function __construct()
         {
@@ -23,11 +19,15 @@
             $this->$atributo = $contenido;
         }
 
+        public function get($atributo)
+        {
+            return $this->$atributo;
+        }
+
         public function listar()
         {
             $sql = "SELECT * FROM secciones";
             $datos = $this->con->consultaRetorno($sql);
-
             return $datos;
         }
 

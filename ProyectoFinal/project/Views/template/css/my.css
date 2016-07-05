@@ -1,0 +1,19 @@
+.navbar-fixed-bottom {
+    text-align:center;
+    padding-top:23px;
+    padding-bottom:23px;
+    background-color: #d9534f;
+}
+
+.container {
+    margin-top: 42px;
+    margin-bottom: 95px;
+}
+
+.imagen-avatar {
+    width: 75px;
+}
+
+.title-list {
+    margin-bottom: 32px;
+}
