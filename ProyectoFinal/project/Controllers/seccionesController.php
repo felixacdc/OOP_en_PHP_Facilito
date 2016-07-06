@@ -44,4 +44,11 @@
             }
             
         }
+
+        public function eliminar($id)
+        {
+            $this->secciones->set('id', $id);
+            $this->secciones->delete();
+            header("Location:" . URL . "secciones");
+        }
     }
